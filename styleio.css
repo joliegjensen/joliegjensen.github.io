@@ -1,0 +1,57 @@
+.header {
+    margin: 0;
+    padding: 0;
+    color: gold;
+    font-family: fantasy;
+    text-align: center;
+}
+
+.resources {
+    border: 10px double black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 20px;
+}
+
+.link {
+    color: darkred;
+    text-decoration: none;
+}
+.link:hover {color: darkcyan;
+    text-decoration: underline;}
+
+.center {
+  width: 200;
+  height: 300; 
+  margin: 5px; 
+  }
+
+  .description {
+    margin: 5px;
+    color: black;
+    font-family: cursive;
+    font-size: small;
+  }
+
+
+.item3 { grid-area: main; font-family: 'Times New Roman', Times, serif;
+    font-size: x-small;}
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'main main main main right right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  padding: 5px;
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
